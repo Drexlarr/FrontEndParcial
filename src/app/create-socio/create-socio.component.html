@@ -1,0 +1,28 @@
+<h3>Registro de Socio</h3>
+<div>
+    <form (ngSubmit) = "save()">
+        <div class = "form-group">
+            <label for="dni">DNI </label>
+            <input type="text" class="form=control" id="dni" [(ngModel)] = "socio.dni" name="dni">
+        </div>
+        <div class = "form-group">
+            <label for="nombre">NOMBRE </label>
+            <input type="text" class="form=control" id="nombre" [(ngModel)] = "socio.nombre" name="nombre">
+        </div>
+        <div class = "form-group">
+            <label for="email">EMAIL</label>
+            <input type="text" class="form=control" id="email" [(ngModel)] = "socio.email" name="email">
+        </div>
+        <div class = "form-group">
+            <label for="direccion">DIRECCION </label>
+            <input type="text" class="form=control" id="direccion" [(ngModel)] = "socio.direccion" name="direccion">
+        </div>
+        <div class = "form-group">
+            <label for="ndependientes">NÚMERO DE DEPENDIENTES</label>
+            <input type="text" class="form=control" id="ndependientes" [(ngModel)] = "socio.ndependientes" name="ndependientes">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Registrar</button>
+        </div>
+    </form>
+</div>
